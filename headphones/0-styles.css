@@ -77,4 +77,21 @@ body {
 .cta-button:active {
   opacity: 0.9;
 }
+@media (max-width: 480px) {
+  .hero {
+    background-image: url('images/hero-mobile.jpg');
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-content {
+    margin-bottom: 40px;
+  }
+}
+
 
