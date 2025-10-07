@@ -1,0 +1,15 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #FF6565;
+  --text-color: #fff;
+  --bg-color: #1c1c1c;
+  --max-width: 1000px;
+  --font-main: 'Source Sans Pro', sans-serif;
+}
