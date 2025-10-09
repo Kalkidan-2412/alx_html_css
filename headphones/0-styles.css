@@ -1,44 +1,30 @@
-/* Reset */
+/* 0-styles.css */
+:root {
+  --primary-color: #FF6565;
+  --max-width: 1000px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variables */
-:root {
-  --primary-color: #FF6565;
-  --text-color: #fff;
-  --bg-color: #1c1c1c;
-  --max-width: 1000px;
-  --font-main: 'Source Sans Pro', sans-serif;
-}
 body {
-  font-family: var(--font-main);
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .hero {
-  background-image: url('images/hero-desktop.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
+  background: #f0f0f0;
+  padding: 50px 20px;
 }
 
-.navbar {
+.nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto 50px auto;
 }
 
 .nav-links {
@@ -48,50 +34,40 @@ body {
 }
 
 .nav-links a {
-  color: var(--text-color);
   text-decoration: none;
+  color: #000;
+  transition: 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links a:active {
+.nav-links a:hover {
   color: var(--primary-color);
 }
 
-.hero-content {
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: 100px;
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.cta-button {
-  display: inline-block;
+.hero-content p {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 30px;
+  border: none;
   background-color: var(--primary-color);
-  color: var(--text-color);
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: opacity 0.3s ease;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.cta-button:hover,
-.cta-button:active {
+button:hover {
   opacity: 0.9;
 }
+
+/* Mobile */
 @media (max-width: 480px) {
-  .hero {
-    background-image: url('images/hero-mobile.jpg');
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .nav-links {
+  .nav {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero-content {
-    margin-bottom: 40px;
   }
 }
-
-
